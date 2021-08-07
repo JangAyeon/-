@@ -10,7 +10,7 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #73aace;
+  --color-blue: #cce1f8;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -388,4 +388,47 @@ p {
   text-align: center;
   width: 90%;
   margin-right: 30px;
+}
+
+/*tALKS*/
+
+#talkS {
+  background-color: var(--color-blue);
+}
+
+.talks {
+  margin: 40px;
+}
+.talk {
+  display: flex;
+  margin: 32px 0;
+}
+
+.talks__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.talks__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.talks__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.talks__speech-bubble {
+  padding: 40px 18px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.talks__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.talks__speech-bubble a {
+  color: var(--color-pink);
 }
