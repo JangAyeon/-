@@ -28,22 +28,22 @@
             <!--<img class="fab mountain" src="imgs/fav_2.png" alt="favicon"></img>-->
             <a href="#">자유지대</a>
         </div>
-        <div class="navbar__menu">
+        
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Members</li>
-                <li class="navbar__menu__item">Awards</li>
-                <li class="navbar__menu__item">Data</li>
-                <li class="navbar__menu__item">Talk</li>
-                <li class="navbar__menu__item">Contact</li>
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#members">Members</li>
+                <li class="navbar__menu__item" data-link="#awards">Awards</li>
+                <li class="navbar__menu__item" data-link="#data">Data</li>
+                <li class="navbar__menu__item" data-link="#talkS">Talk</li>
+                <li class="navbar__menu__item" data-link="#foot">Contact</li>
             </ul>
-        </div>
+        
 
         <!--Toggle button-->
-        <div class="navbar__toggle-btn">
+        <button class="navbar__toggle-btn">
             <i class="fas fa-bars"></i>
-        </div>
+        </button>
 
     </nav>
 
@@ -110,7 +110,7 @@
                 <div class="history__discription">
                     <p class="history__name"> 自由地帶 : 자유지대 : 우리가 마주 보는 곳</p>
                     <p class="history__period">21.08.01 ~ 21.08.22</p>
-                    </div>
+                </div>
             </div>
 
         </div>
@@ -122,26 +122,26 @@
             <h1>Members</h1>
             <h2>Skill & Contribution</h2>
             <div class="members__categories">
-                <button class="category__btn active">All
+                <button class="category__btn selected" data-filter="*">All
                     <span class="category__count">10</span>
                 </button>
-                <button class="category__btn">God
+                <button class="category__btn" data-filter="God">God
                     <span class="category__count">2</span>
                 </button>
-                <button class="category__btn">Notice
+                <button class="category__btn" data-filter="Notice">Notice
                     <span class="category__count">4</span>
                 </button>
-                <button class="category__btn">Meet
+                <button class="category__btn" data-filter="Meet">Meet
                     <span class="category__count">3</span>
                 </button>
-                <button class="category__btn">Event
+                <button class="category__btn" data-filter="Event">Event
                     <span class="category__count">4</span>
                 </button>
             </div>
 
             <div class="members__elements">
 
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="God">
                     <img 
                         src="imgs/mem1.jpg" 
                         alt="mem1"
@@ -152,7 +152,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="God">
                     <img src="imgs/mem2.jpg" alt="mem2"
                         class="element__img">
                     <div class="element__description">
@@ -160,7 +160,7 @@
                         <span>아주 멋진 사람</span>
                     </div>
                 </a>
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="God">
                     <img src="imgs/mem1.jpg" alt="mem3"
                         class="element__img">
                     <div class="element__description">
@@ -168,7 +168,7 @@
                         <span>아주 멋진 사람</span>
                     </div>
                 </a>
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Notice">
                     <img src="imgs/mem2.jpg" alt="mem4" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
@@ -176,21 +176,21 @@
                     </div>
                 </a>
 
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Notice">
                     <img src="imgs/mem1.jpg" alt="mem5" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
                         <span>아주 멋진 사람</span>
                     </div>
                 </a>
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Notice">
                     <img src="imgs/mem2.jpg" alt="mem6" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
                         <span>아주 멋진 사람</span>
                     </div>
                 </a>
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Meet">
                     <img src="imgs/mem1.jpg" alt="mem7" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
@@ -198,14 +198,14 @@
                     </div>
                 </a>
 
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Meet">
                     <img src="imgs/mem2.jpg" alt="mem8" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
                         <span>아주 멋진 사람</span>
                     </div>
                 </a>
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Event">
                     <img src="imgs/mem1.jpg" alt="mem7" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
@@ -213,11 +213,11 @@
                     </div>
                 </a>
 
-                <a href="#" class="element" target=blank>
+                <a href="#" class="element" target=blank data-type="Event Notice">
                     <img src="imgs/mem2.jpg" alt="mem8" class="element__img">
                     <div class="element__description">
                         <h3>ㅇㄴ</h3>
-                        <span>아주 멋진 사람</span>
+                        <span>꽤나 멋진 사람</span>
                     </div>
                 </a>
 
@@ -484,7 +484,7 @@
                             All competing 질투나 또 증오들은 널리 번져 Like a covid
                         </p>
                         <p class="name">칫국
-                            <!--<a href="#">--> / 천재</a>
+                            <a href="#">/ 천재</a>
                         </p>
                     </div>
                     <img 
@@ -537,5 +537,11 @@
         </p>
 
     </section>
+
+    <!--Arrow up-->
+    <div class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
 </body>
 </html>
