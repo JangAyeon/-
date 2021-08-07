@@ -137,6 +137,10 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -210,6 +214,10 @@ p {
   height: auto;
 }
 
+/*members*/
+#members {
+  background-color: var(--color-light-white);
+}
 .members__categories {
   margin: 40px;
 }
@@ -308,4 +316,76 @@ p {
   left: 50%;
   margin-left: -12px;
   margin-top: 8px;
+}
+
+/*Awards*/
+#awards {
+  background-color: var(--color-yellow);
+}
+
+.awardset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.awardset__title {
+  color: var(--color-white);
+}
+
+.awardset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+.award {
+  margin-bottom: 32px;
+}
+
+.award__description {
+  display: flex;
+  justify-content: space-between;
+}
+.award__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.award__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+.awardset__right {
+  flex-basis: 40%;
+}
+
+.prize {
+  background-color: var(--color-grey);
+}
+
+.prize,
+.etc {
+  padding: 20px;
+}
+
+/*data*/
+
+.data__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.data__title {
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.data__img img {
+  text-align: center;
+  width: 90%;
+  margin-right: 30px;
 }
