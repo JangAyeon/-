@@ -5,12 +5,13 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
-  --color-dark-grey: #4d4d4d;
+  --color-pink: #f41e6b;
+  --color-dark-pink: #f889ee;
+  --color-dark-grey: #3d3b3a;
   --color-grey: #616161;
-  --color-light-grey: #7c7979;
-  --color-blue: #cce1f8;
+  --color-light-grey: #777575;
+  --color-blue: #b9f5fb;
+  --color-dark-blue: #29e1f3;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
@@ -25,6 +26,7 @@
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
+  --weight-semi-semi-bold: 540;
   --weight-regular: 400;
 
   /*Size*/
@@ -128,7 +130,7 @@ p {
 }
 .navbar__menu__item:hover {
   border-color: var(--color-white);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-blue);
 }
 
 .navbar__toggle-btn {
@@ -142,9 +144,9 @@ p {
 /*Home*/
 
 #home {
-  /*background: url("imgs/open_gif.gif") center/cover no-repeat;*/
+  background: black center/cover no-repeat;
   /*padding: 48px;*/
-  padding-top: 7%;
+  padding-top: 10%;
   text-align: left;
 }
 
@@ -159,6 +161,7 @@ p {
 .section {
   padding: 50px;
   padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
   margin: auto;
 }
@@ -207,7 +210,7 @@ p {
 }
 
 .char__icon:hover {
-  border: 3px solid var(--color-blue);
+  border: 3px solid var(--color-pink);
 }
 
 .about__history {
@@ -228,7 +231,8 @@ p {
 }
 .history__name,
 .history__period {
-  color: var(--color-light-grey);
+  color: var(--color-dark-grey);
+  font-weight: var(--weight-semi-semi-bold);
 }
 
 .history__name {
@@ -245,7 +249,7 @@ p {
 
 /*members*/
 #members {
-  background-color: var(--color-light-white);
+  background-color: var(--color-blue);
 }
 .members__categories {
   margin: 40px;
@@ -272,13 +276,13 @@ p {
   top: 0;
 }
 .category__count {
-  background-color: var(--color-blue);
+  background-color: var(--color-dark-pink);
   border-radius: 50%;
   color: var(--color-white);
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: inline-block;
-  line-height: 24px;
+  line-height: 29px;
   position: absolute;
   top: -20px;
   right: 16px;
@@ -307,7 +311,7 @@ p {
   width: 200px;
   height: 200px;
   margin: 2px;
-  background-color: var(--color-light-white);
+  background-color: var(--color-white);
 }
 
 .element.invisible {
@@ -345,7 +349,8 @@ p {
 }
 
 .element__description h3 {
-  color: var(--color-orange);
+  color: var(--color-dark-blue);
+  font-weight: var(--weight-bold);
 }
 
 .element__description h3:after {
@@ -436,7 +441,7 @@ p {
 /*tALKS*/
 
 #talkS {
-  background-color: var(--color-blue);
+  background-color: var(--color-light-white);
 }
 
 .talks {
@@ -500,7 +505,7 @@ p {
 
 .footer__links i:hover {
   transform: scale(1.1);
-  color: var(--color-yellow);
+  color: var(--color-blue);
 }
 .footer__rights {
   color: var(--color-white);
@@ -515,7 +520,7 @@ p {
   height: 70px;
   font-size: 50px;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-pink);
   border-radius: 50%;
   text-align: center;
   opacity: 0;
@@ -527,6 +532,9 @@ p {
   opacity: 1;
   display: block;
   pointer-events: auto;
+}
+.arrow-up.visible:hover {
+  background-color: var(--color-dark-blue);
 }
 
 /*For below 768px screen width*/
@@ -565,6 +573,7 @@ p {
   .section {
     padding: 16px;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .about__char {
@@ -581,8 +590,8 @@ p {
   }
   .history {
     text-align: left;
-    margin-bottom: 10px;
-    margin-left: 10%;
+    margin-bottom: 18px;
+    margin-left: 25%;
   }
   /*
   .category__btn {
