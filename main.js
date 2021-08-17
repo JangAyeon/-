@@ -49,7 +49,7 @@ arrowUp.addEventListener("click",()=>{
 })
 
 
-/*Projects*/
+/*멤버*/
 
 const workBtnContainer=document.querySelector(".members__categories");
 const projectContainer=document.querySelector(".members__elements");
@@ -88,6 +88,10 @@ workBtnContainer.addEventListener("click",(e)=>{
     },300)
 
 })
+
+
+
+
 
 function scrollIntoView(selector){
     const scrollTo=document.querySelector(selector);
