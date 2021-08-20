@@ -13,10 +13,17 @@
         crossorigin="anonymous">
     </script>
 
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
-        rel="stylesheet"
-    />
+    <script>
+        (function(d) {
+        var config = {
+            kitId: 'cid6kzk',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 
@@ -107,14 +114,14 @@
                 <div class="history">
                     <img src="imgs/profile/프로필.png" alt="logo1" class="history__img">
                     <div class="history__discription">
-                        <p class="history__name"> 자유지대 1 : 우리가 만나는 곳</p>
+                        <p class="history__name"> 자유지대 1<br>우리가 만나는 곳</p>
                         <p class="history__period">21.01.27 ~ 21.02.28</p>
                     </div>
                 </div>
                 <div class="history">
                     <img src="imgs/profile/프로필2.jpg" alt="logo2" class="history__img">
                     <div class="history__discription">
-                        <p class="history__name"> 자유지대 2 : 우리가 마주 보는 곳</p>
+                        <p class="history__name"> 자유지대 2 <br> 우리가 마주 보는 곳</p>
                         <p class="history__period">21.08.01 ~ 21.0.12</p>
                     </div>
                 </div>
@@ -307,7 +314,7 @@
                     <div class="prize">
                         <h3 class="awardset__title">Prize</h3>
                             <ul class="prize__list">
-                                <li><span style=cursor:hand onClick="location.href='http://file3.instiz.net/data/cached_img/upload/2020/08/19/20/2baf858cf72b806489bcdc396de21c79.jpg'" >1 : 쥬밀</span></li>
+                                <li><span  onClick="location.href='http://file3.instiz.net/data/cached_img/upload/2020/08/19/20/2baf858cf72b806489bcdc396de21c79.jpg'" >1 : 쥬밀</span></li>
                                 <li><span>2 : 밀쥬</span></li>
                                 <li><span>3 : 잼젠</span></li>
                                 <li><span>4 : 재도</span></li>
@@ -843,14 +850,14 @@
                         <!-- 슬라이드 영역 -->
                         <li class="slideitem">
                             <a>
-                                <img src="./imgs/slide/1.png">
+                                <img src="./imgs/slide/예시1.png">
                             </a>
                         </li>
                         <li class="slideitem">
                             <a>
                                 
             
-                                <img src="./imgs/slide/1.png">
+                                <img src="./imgs/slide/예시1.png">
                             </a>
                         </li>
                         <li class="slideitem">
@@ -1078,26 +1085,43 @@
 
     <!--Contact-->
     <section id="foot" class="section">
-        <h1 class="footer__title">自由地帶 : 자유지대</h1>
-        <h2 class="footer__sub">우리가 마주 보는 곳</h2>
-        <div class="footer__links">
-            <a href="https://twitter.com/TFHWEBZINE?s=20" target="_blank">
-                <i class="fab fa-twitter-square"></i>
-            </a>
+        <div class="footer">
+            <img src="imgs/light_logo/그룹 4.png" class="footer__img">
+            <!--
+            <div class="footer__info__1">
+                <h2 class="footer__title">자유지대</h2>
+                <h3 class="footer__sub">우리가 마주 보는 곳</h3>
+            </div>
+            -->
+            <div class="footer__info_2">
+                <div class="footer__links">
+                    <a href="https://twitter.com/TFHWEBZINE?s=20" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
 
-            <a href="https://thefreeholdwz.postype.com/" target="_blank">
-                <i class="fas fa-book-open"></i>
-            </a>
+                    <a href="https://thefreeholdwz.postype.com/" target="_blank">
+                        <i class="fas fa-book-open"></i>
+                    </a>
+                </div>
+                <p class="footer__rights__1">
+                    2021 The FreeHold Webzine 2 Review
+                </p>
+                <p class="footer__rights__2">
+                    All rights reserved 김피로
+                </p>
+            </div>
         </div>
-        <p class="footer__rights">
-            2021 The FreeHold Webzine 2 - All rights reserved 김피로
-        </p>
-
+        </div>
     </section>
 
     <!--Arrow up-->
     <div class="arrow-up">
-        <i class="fas fa-arrow-up"></i>
+        <img 
+        src="imgs/버튼/up.png" 
+        alt="arrow-up" 
+        
+        
+    />
     </div>
 
 </body>
