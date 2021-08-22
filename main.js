@@ -1,25 +1,25 @@
 "use strict";
 
+//make navbar transparent when scroll is on the top
 
-
-//Handle scrolling when tapping on the navbar menu
-
-const navbarMenu=document.querySelector(".navbar__menu");
-navbarMenu.addEventListener("click",(event)=>{
-    const target=event.target;
-    const link=target.dataset.link;
-    if (link==null){
-        return;
+const navbar=document.querySelector("#navbar");
+const navbarHeight=navbar.getBoundingClientRect().height;
+document.addEventListener("scroll",()=>{
+    if(window.scrollY>navbarHeight){
+        navbar.classList.add("navbar--dark");
     }
-    navbarMenu.classList.remove("open");
-    scrollIntoView(link);
+    else{
+        navbar.classList.remove("navbar--dark");
+    }
 });
+
+
 
 //Navbar toggle button for small screen
 const navbarToggleBtn=document.querySelector(".navbar__toggle-btn");
 navbarToggleBtn.addEventListener("click",()=>{
     navbarMenu.classList.toggle("open");
-    console.log("click");
+    /*console.log("click");*/
 });
 
 
@@ -93,8 +93,65 @@ workBtnContainer.addEventListener("click",(e)=>{
 
 
 
+
+
+const sections=document.querySelectorAll("section");
+const navLi=document.querySelectorAll("nav .navbar__menu li");
+//console.log(navLi);
+
+window.addEventListener("scroll",()=>{
+    let current='';
+    //console.log(pageYOffset);
+    sections.forEach(section=>{
+        const sectionTop=section.offsetTop;
+        //console.log(sectionTop);
+        const sectionHeight=section.clientHeight;
+        if (pageYOffset>=(sectionTop-10)){
+            current=section.getAttribute("id");
+        }
+
+
+    })
+    //console.log(current);
+
+    navLi.forEach(li=>{
+
+        li.classList.remove("active");
+        //console.log(li.dataset.link);
+        const data_link=li.dataset.link;
+        //console.log(data_link);
+        if(data_link.includes(current)){
+            //console.log(data_link);
+            li.classList.add("active");
+
+        }
+    })
+});
+
+
 function scrollIntoView(selector){
     const scrollTo=document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior:"smooth"});
-
+    //console.log(scrollTo);
+    scrollTo.scrollIntoView(
+        {block:"start",
+        behavior:"smooth"});
 }
+
+//Handle scrolling when tapping on the navbar menu
+const navbarMenu=document.querySelector(".navbar__menu");
+//const navbaractive=document.querySelector(".navbar__menu__item.active");
+window.addEventListener("click",(event)=>{
+    const target=event.target;
+    //console.log("target : ",target);
+
+    const link=target.dataset.link;
+    //console.log("linK : ",link);
+    if (link==null){
+        return;
+    }
+    navbarMenu.classList.remove("open");
+    scrollIntoView(link)
+    
+
+
+});
