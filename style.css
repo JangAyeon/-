@@ -71,14 +71,14 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 16px 0px;
 }
 
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 8px 0;
 }
 
@@ -113,7 +113,9 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background: transparent url("imgs/PC-연보라배경/PC-연보라배경.png") 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
 }
 
 .navbar__menu {
@@ -135,12 +137,17 @@ p {
 
 nav ul li.active {
   border: 1px solid var(--color-white);
-  background-color: var(--color-dark-pink);
+  background: transparent url("imgs/PC-진분홍배경/PC-진분홍배경.png") 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
 }
 
 .navbar__menu__item:hover {
-  border-color: var(--color-white);
-  /*background-color: var(--color-dark-pink);*/
+  background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+  border: 1px solid var(--color-white);
+  color: var(--color-dark-blue);
 }
 
 .navbar__toggle-btn {
@@ -259,7 +266,13 @@ nav ul li.active {
 
 /*members*/
 #members {
-  background-color: var(--color-blue);
+  background: transparent url("imgs/PC-어두운하늘배경/PC-어두운하늘배경.png") 0%
+    0% repeat-y padding-box;
+  opacity: 1;
+}
+#members h1,
+#members h2 {
+  /*color: var(--color-dark-pink);*/
 }
 .members__categories {
   margin: 40px;
@@ -276,14 +289,19 @@ nav ul li.active {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-dark-pink);
-  color: var(--color-white);
+  background: transparent url("imgs/PC-연보라배경/PC-연보라배경.png") 0% 0%
+    repeat-y padding-box;
+  opacity: 1;
+  color: var(--color-dark-pink);
 }
 
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
+  background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% repeat-y
+    padding-box;
   opacity: 1;
   top: 0;
+  color: var(--color-black);
 }
 .category__count {
   background-color: var(--color-yellow);
@@ -377,7 +395,9 @@ nav ul li.active {
 
 /*Awards*/
 #awards {
-  background-color: var(--color-white);
+  background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% repeat-y
+    padding-box;
+  opacity: 1;
 }
 
 .awardset {
@@ -437,7 +457,9 @@ nav ul li.active {
 
 /*data*/
 #data {
-  background-color: var(--color-white);
+  background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% repeat-y
+    padding-box;
+  opacity: 1;
 }
 .data__left {
   flex-basis: 60%;
@@ -459,7 +481,11 @@ nav ul li.active {
 
 /*Event*/
 #events {
-  background-color: var(--color-dark-blue);
+  /*background: transparent url("imgs/PC-진분홍배경/PC-진분홍배경.png") 0% 0%
+    repeat-y /*no-repeat*/ padding-box;*/
+    background-color: var(--color-light-white);
+
+  opacity: 1;
 }
 .slideblock input[id*="slide"] {
   display: none;
@@ -591,10 +617,16 @@ nav ul li.active {
 
 /*tALKS*/
 
-#talkS {
-  background-color: var(--color-light-white);
-}
+#talks {
+  background: transparent url("imgs/PC-진분홍배경/PC-진분홍배경.png") 0% 0%
+    repeat-y /*no-repeat*/ padding-box;
+    /*background-color: var(--color-light-white);*/
 
+  opacity: 1;
+}
+#talks h1, #talks h2{
+  color:var(--color-light-white);
+}
 .talks {
   margin: 40px;
 }
@@ -620,7 +652,9 @@ nav ul li.active {
 
 .talks__speech-bubble {
   padding: 40px 18px;
-  background-color: var(--color-white);
+  background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% no-repeat;
+  background-size: 100% 100%;
+  opacity: 1;
   border-radius: var(--size-border-radius);
 }
 
@@ -634,7 +668,9 @@ nav ul li.active {
 
 /*Contact*/
 #foot {
-  background-color: var(--color-pink);
+  background: transparent url("imgs/PC-연보라배경/PC-연보라배경.png") 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
   padding-top: 50px;
   padding-bottom: 50px;
 }
