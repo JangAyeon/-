@@ -418,6 +418,7 @@ nav ul li.active {
   padding: 20px 40px;
 }
 .award {
+  margin-top: 40px;
   margin-bottom: 32px;
 }
 
@@ -453,6 +454,10 @@ nav ul li.active {
 .etc {
   padding: 20px 40px;
   text-align: left;
+}
+
+.etc_list__discript{
+  font-size: var(--font-micro);
 }
 
 /*data*/
@@ -761,7 +766,9 @@ nav ul li.active {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    background-color: var(--color-pink);
+    background: transparent url("imgs/PC-연보라배경/PC-연보라배경.png") 0% 0% no-repeat;
+    opacity: 1;
+    
   }
 
   .navbar__menu {
