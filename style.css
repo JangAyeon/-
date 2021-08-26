@@ -149,11 +149,14 @@ nav ul li.active {
   background: transparent url("imgs/PC-진분홍배경/PC-진분홍배경.png") 0% 0%
     no-repeat padding-box;
   opacity: 1;
+  cursor: pointer;
 }
+
 
 .navbar__menu__item:hover {
   background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% no-repeat
     padding-box;
+    cursor: pointer;
   opacity: 1;
   border: 1px solid var(--color-white);
   color: var(--color-dark-blue);
