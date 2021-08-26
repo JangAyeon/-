@@ -450,6 +450,9 @@ nav ul li.active {
 .awardset__right {
   flex-basis: 40%;
 }
+.award__img{
+  cursor:pointer;
+}
 
 .prize {
   background-color: var(--color-grey);
