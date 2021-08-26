@@ -77,53 +77,92 @@ workBtnContainer.addEventListener("click", (e) => {
   }, 300);
 });
 
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll("nav .navbar__menu li");
-//console.log(navLi);
 
-window.addEventListener("scroll", () => {
-  let current = "";
-  //console.log(pageYOffset);
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    //console.log(sectionTop);
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - 10) {
-      current = section.getAttribute("id");
-    }
-  });
-  //console.log(current);
-
-  navLi.forEach((li) => {
-    li.classList.remove("active");
-    //console.log(li.dataset.link);
-    const data_link = li.dataset.link;
-    //console.log(data_link);
-    if (data_link.includes(current)) {
-      //console.log(data_link);
-      li.classList.add("active");
-    }
-  });
-});
-
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  //console.log(scrollTo);
-  scrollTo.scrollIntoView({ block: "start", behavior: "smooth" });
-}
 
 //Handle scrolling when tapping on the navbar menu
-const navbarMenu = document.querySelector(".navbar__menu");
-//const navbaractive=document.querySelector(".navbar__menu__item.active");
-window.addEventListener("click", (event) => {
-  const target = event.target;
-  //console.log("target : ",target);
 
-  const link = target.dataset.link;
-  //console.log("linK : ",link);
-  if (link == null) {
-    return;
-  }
-  navbarMenu.classList.remove("open");
-  scrollIntoView(link);
+const navbarMenu=document.querySelector(".navbar__menu");
+navbarMenu.addEventListener("click",(event)=>{
+    const target=event.target;
+    const link=target.dataset.link;
+    if (link==null){
+        return;
+    }
+    navbarMenu.classList.remove("open");
+    scrollIntoView(link);
+    
 });
+
+
+// 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다
+// 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다
+// 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다
+const sectionIds = [
+  '#home',
+  '#about',
+  '#members',
+  '#awards',
+  '#data',
+  '#events',
+  "#talks",
+  "#foot"
+];
+const sections = sectionIds.map(id => document.querySelector(id));
+const navItems = sectionIds.map(id =>
+  document.querySelector(`[data-link="${id}"]`)
+);
+
+let selectedNavIndex = 0;
+let selectedNavItem = navItems[0];
+function selectNavItem(selected) {
+  selectedNavItem.classList.remove('active');
+  selectedNavItem = selected;
+  selectedNavItem.classList.add('active');
+}
+
+
+function scrollIntoView(selector){
+  const scrollTo=document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior:"smooth"});
+  selectNavItem(navItems[sectionIds.indexOf(selector)]);
+}
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3,
+};
+
+const observerCallback = (entries, observer) => {
+  
+  entries.forEach(entry => {
+      console.log(entry.target.id); 
+      console.log(sectionIds);
+      if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+          const index = sectionIds.indexOf("#"+`${entry.target.id}`);
+      //console.log(entry.target);
+      console.log(index);
+      // 스크롤링이 아래로 되어서 페이지가 올라옴
+      if (entry.boundingClientRect.y < 0) {
+          selectedNavIndex = index + 1;
+      } else {
+          selectedNavIndex = index - 1;
+      }
+  }
+});
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
+
+window.addEventListener("scroll",()=>{
+  
+  if (window.scollY==0){
+      selectedNavIndex=0;
+  }
+  else if (Math.round(window.scrollY+window.innerHeight)>=
+      (document.body.clientHeight)){
+      selectedNavIndex=navItems.length-1;
+  }
+  selectNavItem(navItems[selectedNavIndex]);
+})
