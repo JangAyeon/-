@@ -406,10 +406,12 @@ nav ul li.active {
   color: var(--color-white);
   margin-top: 20px;
   margin-bottom: 60px;
+
 }
 
 .awardset__title {
   color: var(--color-white);
+  padding-bottom: 12px;
 }
 
 .awardset__left {
@@ -418,7 +420,6 @@ nav ul li.active {
   padding: 20px 40px;
 }
 .award {
-  margin-top: 40px;
   margin-bottom: 32px;
 }
 
@@ -448,6 +449,7 @@ nav ul li.active {
 .prize__list li {
   cursor: pointer;
   text-align: left;
+  padding-left: 15px;
 }
 
 .prize,
@@ -455,9 +457,8 @@ nav ul li.active {
   padding: 20px 40px;
   text-align: left;
 }
-
-.etc_list__discript{
-  font-size: var(--font-micro);
+.etc__list__discript{
+ font-size: 12px;
 }
 
 /*data*/
@@ -479,9 +480,9 @@ nav ul li.active {
 
 .data__img img {
   text-align: center;
-  width: 90%;
-  height: 70%;
-  margin-right: 30px;
+  width: 100%;
+  height: 75%;
+
 }
 
 /*Event*/
@@ -518,7 +519,7 @@ nav ul li.active {
   padding: 10px 0;
 }
 .slideblock .slidelist > li > a img {
-  width: 80%;
+  width: 100%;
 }
 .slideblock .slidelist label {
   position: absolute;
@@ -540,6 +541,77 @@ nav ul li.active {
   transform: translateX(-200%);
 }
 
+.slideblock input[id="slide04"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-300%);
+}
+.slideblock input[id="slide05"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-400%);
+}
+
+.slideblock input[id="slide06"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-500%);
+}
+.slideblock input[id="slide07"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-600%);
+}
+.slideblock input[id="slide08"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-700%);
+}
+
+.slideblock input[id="slide09"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-800%);
+}
+
+.slideblock input[id="slide10"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-900%);
+}
+
+.slideblock input[id="slide11"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1000%);
+}
+.slideblock input[id="slide12"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1100%);
+}
+.slideblock input[id="slide13"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1200%);
+}
+.slideblock input[id="slide14"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1300%);
+}
+.slideblock input[id="slide15"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1400%);
+}
+
+.slideblock input[id="slide16"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1500%);
+}
+.slideblock input[id="slide17"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1600%);
+}
+.slideblock input[id="slide18"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1700%);
+}
+.slideblock input[id="slide19"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1800%);
+}
+.slideblock input[id="slide20"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-1900%);
+}
+.slideblock input[id="slide21"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-2000%);
+}
+.slideblock input[id="slide22"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-2100%);
+}
+.slideblock input[id="slide23"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-2200%);
+}
+.slideblock input[id="slide24"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-2300%);
+}/*
+
+
+
 /* 좌,우 슬라이드 버튼 */
 .slide-control > div {
   display: none;
@@ -549,12 +621,14 @@ nav ul li.active {
   background: url("./imgs/slide/left.png") center center / 100% no-repeat;
   background-size: 60px 60px;
   opacity: 0.5;
+  z-index: 1;
 }
 .slideblock .right {
   right: 5px;
   background: url("./imgs/slide/right.png") center center / 100% no-repeat;
   background-size: 60px 60px;
   opacity: 0.5;
+  z-index: 1;
 }
 .slideblock
   input[id="slide01"]:checked
@@ -577,6 +651,157 @@ nav ul li.active {
   > div:nth-child(3) {
   display: block;
 }
+.slideblock
+  input[id="slide04"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(4) {
+  display: block;
+}
+.slideblock
+  input[id="slide05"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(5) {
+  display: block;
+}
+.slideblock
+  input[id="slide06"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(6) {
+  display: block;
+}
+.slideblock
+  input[id="slide07"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(7) {
+  display: block;
+}
+.slideblock
+  input[id="slide08"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(8) {
+  display: block;
+}
+.slideblock
+  input[id="slide09"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(9) {
+  display: block;
+}
+.slideblock
+  input[id="slide10"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(10) {
+  display: block;
+}
+.slideblock
+  input[id="slide11"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(11) {
+  display: block;
+}
+.slideblock
+  input[id="slide12"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(12) {
+  display: block;
+}
+.slideblock
+  input[id="slide13"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(13) {
+  display: block;
+}
+
+.slideblock
+  input[id="slide14"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(14) {
+  display: block;
+}
+.slideblock
+  input[id="slide15"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(15) {
+  display: block;
+}
+
+.slideblock
+  input[id="slide16"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(16) {
+  display: block;
+}
+.slideblock
+  input[id="slide17"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(17) {
+  display: block;
+}
+.slideblock
+  input[id="slide18"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(18) {
+  display: block;
+}
+
+.slideblock
+  input[id="slide19"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(19) {
+  display: block;
+}
+.slideblock
+  input[id="slide20"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(20) {
+  display: block;
+}
+.slideblock
+  input[id="slide21"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(21) {
+  display: block;
+}
+.slideblock
+  input[id="slide22"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(22) {
+  display: block;
+}
+.slideblock
+  input[id="slide23"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(23) {
+  display: block;
+}
+.slideblock
+  input[id="slide24"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(24) {
+  display: block;
+}
+
 
 /* 페이징 */
 .slide-pagelist {
@@ -619,6 +844,180 @@ nav ul li.active {
   > label {
   background: #999;
 }
+.slideblock
+  input[id="slide04"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(4)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide05"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(5)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide06"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(6)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide07"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(7)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide08"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(8)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide09"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(9)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide10"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(10)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide11"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(11)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide12"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(12)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide13"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(13)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide14"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(14)
+  > label {
+  background: #999;
+}
+
+.slideblock
+  input[id="slide15"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(15)
+  > label {
+  background: #999;
+}
+
+.slideblock
+  input[id="slide16"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(16)
+  > label {
+  background: #999;
+}
+
+.slideblock
+  input[id="slide17"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(17)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide18"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(18)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide19"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(19)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide20"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(20)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide21"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(21)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide22"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(22)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide23"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(23)
+  > label {
+  background: #999;
+}
+
+.slideblock
+  input[id="slide24"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(23)
+  > label {
+  background: #999;
+}
+
+
 
 /*tALKS*/
 
@@ -766,9 +1165,7 @@ nav ul li.active {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    background: transparent url("imgs/PC-연보라배경/PC-연보라배경.png") 0% 0% no-repeat;
-    opacity: 1;
-    
+    background-color: var(--color-pink);
   }
 
   .navbar__menu {
@@ -815,6 +1212,7 @@ nav ul li.active {
   .awardset {
     flex-direction: column;
   }
+
   /*
   .element {
     flex-grow: 1;
@@ -825,8 +1223,8 @@ nav ul li.active {
     align-items: center;
   }
   .talks__avatar {
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: 170px;
   }
   .talks__avatar:nth-child(even),
   .talks__avatar:nth-child(odd) {
