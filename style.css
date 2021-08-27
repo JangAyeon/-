@@ -424,7 +424,7 @@ nav ul li.active {
 
 .awardset__title {
   color: var(--color-white);
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .awardset__left {
@@ -465,7 +465,7 @@ nav ul li.active {
 .prize__list li {
   cursor: pointer;
   text-align: left;
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 
 .prize,
@@ -498,6 +498,7 @@ nav ul li.active {
   text-align: center;
   width: 100%;
   height: 75%;
+  padding-bottom: 25px;
 
 }
 
@@ -624,7 +625,10 @@ nav ul li.active {
 }
 .slideblock input[id="slide24"]:checked ~ .slidewrap .slidelist > li {
   transform: translateX(-2300%);
-}/*
+}
+.slideblock input[id="slide25"]:checked ~ .slidewrap .slidelist > li {
+  transform: translateX(-2400%);
+}
 
 
 
@@ -815,6 +819,13 @@ nav ul li.active {
   ~ .slidewrap
   .slide-control
   > div:nth-child(24) {
+  display: block;
+}
+.slideblock
+  input[id="slide25"]:checked
+  ~ .slidewrap
+  .slide-control
+  > div:nth-child(25) {
   display: block;
 }
 
@@ -1028,7 +1039,15 @@ nav ul li.active {
   input[id="slide24"]:checked
   ~ .slidewrap
   .slide-pagelist
-  > li:nth-child(23)
+  > li:nth-child(24)
+  > label {
+  background: #999;
+}
+.slideblock
+  input[id="slide25"]:checked
+  ~ .slidewrap
+  .slide-pagelist
+  > li:nth-child(24)
   > label {
   background: #999;
 }
@@ -1071,6 +1090,7 @@ nav ul li.active {
 }
 
 .talks__speech-bubble {
+  width: 100%;
   padding: 40px 18px;
   background: transparent url("imgs/PC-흰배경/PC-흰배경.png") 0% 0% no-repeat;
   background-size: 100% 100%;
@@ -1080,6 +1100,9 @@ nav ul li.active {
 
 .talks__speech-bubble p {
   color: var(--color-light-grey);
+}
+p.name{
+  color:var(--color-dark-grey);
 }
 
 .talks__speech-bubble a {
@@ -1165,10 +1188,10 @@ nav ul li.active {
   :root {
     /* Font size */
     --font-large: 30px;
-    --font-medium: 18px;
-    --font-regular: 16px;
-    --font-small: 14px;
-    --font-micro: 12px;
+    --font-medium: 20px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
   }
   .navbar__toggle-btn {
     display: block;
@@ -1200,7 +1223,7 @@ nav ul li.active {
   .section {
     padding: 16px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
 
   .about__char {
@@ -1245,7 +1268,7 @@ nav ul li.active {
   .talks__avatar:nth-child(even),
   .talks__avatar:nth-child(odd) {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
   }
 
   .talks__speech-bubble {
