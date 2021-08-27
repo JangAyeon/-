@@ -1188,10 +1188,10 @@ p.name{
   :root {
     /* Font size */
     --font-large: 30px;
-    --font-medium: 20px;
-    --font-regular: 18px;
-    --font-small: 16px;
-    --font-micro: 14px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
   }
   .navbar__toggle-btn {
     display: block;
