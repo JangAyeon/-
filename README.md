@@ -33,7 +33,7 @@
 
 ## 5. 기능별 페이지
 
-### 5-1. 메인 랜딩
+### 5-1. 메인 랜딩 & Navbar
 |PC|Mobile|
 |:--:|:--:|
 |![image](https://user-images.githubusercontent.com/67853616/147869803-0c61ffc5-939d-4a4d-857c-ac36f8605df8.png)|![image](https://user-images.githubusercontent.com/67853616/147869808-6b0895c5-1e53-4bed-94e8-c04c8ae55361.png)|
