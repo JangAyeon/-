@@ -36,17 +36,17 @@
 ### 5-1. 메인 랜딩 & Navbar
 |PC|Mobile|
 |:--:|:--:|
-|![image](https://user-images.githubusercontent.com/67853616/147869803-0c61ffc5-939d-4a4d-857c-ac36f8605df8.png)|![image](https://user-images.githubusercontent.com/67853616/147869808-6b0895c5-1e53-4bed-94e8-c04c8ae55361.png)|
+|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMjU3/MDAxNjQ1NzQ2ODA5OTEz.ilIRMNRnupBlQEzx2XGsRgDoRlKoW9vXg1elWkQY78sg.oNkDXCJFGNFEEq9pow9b1m3KeQRSxLwenhHeVE9RXTcg.PNG.ayeonjouvence/SE-210fd8a8-85a4-49c6-b965-a9213d41d478.png?type=w773)|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTcz/MDAxNjQ1NzQ3MDc0NTMx.mznhERNAtv7wZx8D5SlaO_ulwNIwlDOOor6G5W-seMcg.-Zh0IaPvR82aLQyJm35w-VzDkaMovsj7YksqEtc5vQcg.PNG.ayeonjouvence/SE-9e2c06ef-6684-4e51-82df-66b5750f9e1d.png?type=w773)|
 
 |PC|Mobile|
 |:--:|:--:|
-|![image](https://user-images.githubusercontent.com/67853616/147869830-7c8d955d-c583-43be-adba-2d3eb0854fdc.png)|<img width="461" alt="image" src="https://user-images.githubusercontent.com/67853616/147869847-19e34914-fe2b-46ed-9ce1-6ace99fe1b98.png">|
+|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTQ3/MDAxNjQ1NzQ2ODI5ODQ3.hvHTXbhlxWvk3Ss78ZrjphLj4nwGbMXxTQQoDEvIi4kg.kYcEv5Jx0CaxTCi7KmJLWv8XVu9R1x_rsMvWddSaX2Ig.PNG.ayeonjouvence/SE-fd9f8887-613c-4c2f-99dc-f096e09f88bb.png?type=w773)|<img width="461" alt="image" src="https://user-images.githubusercontent.com/67853616/147869847-19e34914-fe2b-46ed-9ce1-6ace99fe1b98.png">|
 
 
 ### 5-2. 행사 소개
 |PC|Mobile|
 |:--:|:--:|
-|!![image](https://user-images.githubusercontent.com/67853616/147869881-8b679e8d-48e4-4851-829b-0bf4ba7423da.png)|![image](https://user-images.githubusercontent.com/67853616/147869887-05eea852-49d2-47bc-9a06-6e31b1cf3b19.png)|
+|!![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMjUz/MDAxNjQ1NzQ2ODEwNTEy.P5nzHnqmDm7rBko95PUcZ0J2vSbTwsam-nbgCb44Wbog.BlvXZ4cGnEp-jTI_ze8WXE5GnOVMs41mbMbrfXTs0wAg.PNG.ayeonjouvence/SE-c4576862-f5b3-4cbc-8eb4-a0a3657dc546.png?type=w773)|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTAz/MDAxNjQ1NzQ2ODExMDQ1.OmbJYVu4b08D0x-y5l82N7QcuD_eauOi26IrYquU8Rcg.SNHklQuFMaMAs91sz1SVnwSn9REYlBIGODJ7_VQEcigg.PNG.ayeonjouvence/SE-06a3c6ec-320e-4154-8308-505eefdbc1b5.png?type=w773)|
 
 |기본|Mouse Hover|
 |:--:|:--:|
@@ -55,7 +55,7 @@
 ### 5-3. 멤버 소개
 |PC|Mobile|
 |:--:|:--:|
-|![image](https://user-images.githubusercontent.com/67853616/147869951-3539c058-78c2-4da5-9742-df551878562d.png)|![image](https://user-images.githubusercontent.com/67853616/147869953-a0cbf09e-94d9-4a3e-bc62-d1e671f47e39.png)|
+|![image](https://postfiles.pstatic.net/MjAyMjAxMDJfNzMg/MDAxNjQxMTEwNTY2OTYz.07qpMyz5X2unYV-OaEVoulOzifZ8_isJP3DqhzYD0Fog.8m3vrgVFDL-n2hQHHpYbMlXBlAI8HYg2ls6U_ZVex4Ug.PNG.ayeonjouvence/SE-27eb1ca3-a973-4443-bef5-08052db97b3e.png?type=w773)|![image](https://user-images.githubusercontent.com/67853616/147869953-a0cbf09e-94d9-4a3e-bc62-d1e671f47e39.png)|
 
 |담당 부문별 필터링|hover해 세부 담당 역할 안내|
 |:--:|:--:|
@@ -67,19 +67,17 @@
 
 #### 2. GA 웹진 사이트 EDA 
 
-![image](https://user-images.githubusercontent.com/67853616/147870032-d88308f5-c42f-4f41-b3ce-53396c89b053.png)
+![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTQ1/MDAxNjQ1NzQ2ODEyNTQ5.T_istlxbR_RoHTTr5fgLlSYtwU0U62r2bfaJ7ZSrbLog.QSVnIb_yTR4wWncGP9WC6SO2WlTEhNxhHbskghCXPjYg.PNG.ayeonjouvence/SE-5ca38cdd-32d1-48c3-a308-695d1361e4e6.png?type=w773)
 
-#### 3. 웹진 기고글 wordcloud
 
-![image](https://user-images.githubusercontent.com/67853616/147870012-cea20c88-c86a-4e3b-922e-eafbd047962a.png)
 
 ### 5-5. Event - Image slide
-![image](https://user-images.githubusercontent.com/67853616/147870070-fa05281b-ffa7-4ef8-9f01-3ca46bf96816.png)
+![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTc2/MDAxNjQ1NzQ2ODEzMDI3.V2Nb3KAqtSjFlIMmFwC6w3hXokbr1VmDdabliu8Yxmwg.aurxkSRupmKRvgFnqKLVOKC8TQefKJIfoURpxhGRDaIg.PNG.ayeonjouvence/SE-42186363-6727-4c1d-be9b-7669a0b641c9.png?type=w773)
 
 ### 5-6. Comments
 긴 후기는 클릭시 첨부된 메모장으로 넘어가도록 연결
-![image](https://user-images.githubusercontent.com/67853616/147870075-eea188d4-1803-4045-93d2-cee1f1691906.png)
+![image](https://postfiles.pstatic.net/MjAyMjAxMDJfMjk4/MDAxNjQxMTEwNTc1ODkw.IbSBG9GKoJTQK_TbimyHm3TgfPUAT_SZcx47c04R9p4g.BhKUTRVcZAmUfjnxQHbjPZhRn_0FdxK-bo80a7HL1wcg.PNG.ayeonjouvence/SE-17d31000-cc27-419f-9d9f-a23fc2fd3629.png?type=w773)
 
 ### 5-7. Footer
-![image](https://user-images.githubusercontent.com/67853616/147870088-02148f36-ed49-458e-b837-eee7bbafb41f.png)
+![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMjEy/MDAxNjQ1NzQ2ODA5MTk4.sLtxnsebSEfETwSoeOfIHqtluueN_Cz25pEK5ryjEugg.e8Zj_Egv967BZiQTMk5qhA0xl32q3UXgsO-vplZrHswg.PNG.ayeonjouvence/SE-336d172f-fcec-48af-b89a-a49501847367.png?type=w773)
 
