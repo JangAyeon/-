@@ -11,7 +11,8 @@
 
 ## 3. 전반적 흐름
 
-💻 **웹 Front-End**
+💻 **웹 Front-End**!
+
 
 웹/모바일 기반 **반응형** [이달의 소녀 소개 홈페이지](https://jangayeon.github.io/Responsive_web/) UI/UX 요소 활용 <br>
 **source code** : https://github.com/JangAyeon/Responsive_web
@@ -36,7 +37,7 @@
 ### 5-1. 메인 랜딩 & Navbar
 |PC|Mobile|
 |:--:|:--:|
-|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMjU3/MDAxNjQ1NzQ2ODA5OTEz.ilIRMNRnupBlQEzx2XGsRgDoRlKoW9vXg1elWkQY78sg.oNkDXCJFGNFEEq9pow9b1m3KeQRSxLwenhHeVE9RXTcg.PNG.ayeonjouvence/SE-210fd8a8-85a4-49c6-b965-a9213d41d478.png?type=w773)|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTcz/MDAxNjQ1NzQ3MDc0NTMx.mznhERNAtv7wZx8D5SlaO_ulwNIwlDOOor6G5W-seMcg.-Zh0IaPvR82aLQyJm35w-VzDkaMovsj7YksqEtc5vQcg.PNG.ayeonjouvence/SE-9e2c06ef-6684-4e51-82df-66b5750f9e1d.png?type=w773)|
+|![image](https://user-images.githubusercontent.com/67853616/187702576-3adf8b8f-b600-4275-89ab-2ba34d6d43ff.png)|![image](https://postfiles.pstatic.net/MjAyMjAyMjVfMTcz/MDAxNjQ1NzQ3MDc0NTMx.mznhERNAtv7wZx8D5SlaO_ulwNIwlDOOor6G5W-seMcg.-Zh0IaPvR82aLQyJm35w-VzDkaMovsj7YksqEtc5vQcg.PNG.ayeonjouvence/SE-9e2c06ef-6684-4e51-82df-66b5750f9e1d.png?type=w773)|
 
 |PC|Mobile|
 |:--:|:--:|
